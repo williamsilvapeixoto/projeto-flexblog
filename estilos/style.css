@@ -185,59 +185,76 @@ div.p3{
 }
 
 section#precos{
+    width: 100%;
     background-color: #F7F7F7;
-    padding: 20px;
 
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
     align-items: flex-end;
+    flex-wrap: wrap;
 }
 
-section#precos section{
-    flex: 1;
+section#precos > section{
+    width: 100%;
     border: 5px solid white;
-    margin: 10px;
+    margin: 5px;
+    padding: 20px;
+    flex: 1 250px;
 }
 
-section#precos section h1:nth-child(1){
+section#precos > section > div{
+    max-width: 300px;
+    margin: auto;
+}
+
+section#precos > section > div h1:nth-child(1){
+    text-align: center;
     color: #A4A4A4;
-    text-align: center;
     font-size: 3em;
-    padding: 40px;
+    padding: 10px;
 }
 
-section#precos  section  h1.np{
-    width: 60%;
-    color: #222222;
+section#precos > section > div h1:nth-child(2){
     text-align: center;
+    color: #222222;
     font-size: 3em;
-    display: block;
     border-top: 5px solid white;
     border-bottom: 5px solid white;
 }
 
-section#precos section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex: 1 250px;
-}
-
-section#precos p{
-    text-align: left;
-    display: block;
-    margin: 10px;
-    position: relative;
-    font-size: 1.3em;
-    font-style: italic;
-    color: #7C7C7C;
-}
-
-section#precos div > ul{
+section#precos > section > div ul{
     direction: rtl;
-    list-style: disc;
+    padding: 10px 0;
+    padding-inline-start: 20px;
     color: #2C70FF;
+}
+
+section#precos > section > div ul p{
+    color: #7C7C7C;
+    text-align: left;
+    font-size: 1.25em;
+    font-style: italic;
+    padding: 10px 0;
+}
+
+section#precos input[type=button]{
+    width: 100%;
+    height: 70px;
+    font-size: 1.8em;
+    font-weight: bolder;
+    background-color: transparent;
+    border: 4px solid #222222;
+    cursor: pointer;
+}
+
+section#precos input[type=button]:active{
+    transform: scale(95%);
+    transition-duration: 0.3s;
+}
+
+section#precos input[type=button]:hover{
+    border-color: #777777;
+    color: #454545;
 }
 
 @media (min-width: 740px){
@@ -249,5 +266,15 @@ section#precos div > ul{
 @media (max-width: 556px){
     div.img2 > img{
         width: 100%;
+    }
+}
+
+@media (max-width: 796px){
+    .ouro{
+        order: -1;
+    }
+
+    .cobre{
+        order: 3;
     }
 }
