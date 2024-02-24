@@ -187,7 +187,7 @@ div.p3{
 section#precos{
     width: 100%;
     background-color: #F7F7F7;
-    padding: 15px;
+    padding: 40px 15px;
 
     display: flex;
     justify-content: center;
@@ -256,6 +256,45 @@ section#precos input[type=button]:active{
 section#precos input[type=button]:hover{
     border-color: #777777;
     color: #454545;
+}
+
+section#qualidades{
+    padding: 50px 15px;
+    column-gap: 15px;
+    row-gap: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+section#qualidades > div{
+    flex: 1 30px;
+    padding: 10px 0;
+}
+
+section#qualidades > div h1{
+    color: #A4A4A4;
+    margin: 20px 0;
+    padding-left: 15px;
+    font-size: 2.3em;
+    height: 40px;
+}
+
+.roxo > h1{
+    border-left: 7px solid #AE81FF;
+}
+
+.red > h1{
+    border-left: 7px solid #F9265E;
+}
+
+.azul > h1{
+    border-left: 7px solid #66D9EB;
+}
+
+section#qualidades > div p{
+    font-size: 1.3em;
+    color: #7C7C7C;
 }
 
 @media (min-width: 740px){
