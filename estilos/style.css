@@ -15,10 +15,6 @@
     font-family: 'Nunito';
 }
 
-:root{
-    --azul: #2C70FF;
-}
-
 header{
     color: white;
 }
@@ -82,7 +78,7 @@ div#logo-nav > div{
 }
 
 main{
-    max-width: 900px;
+    max-width: 950px;
     color: rgb(34, 34, 34);
     margin: 0 auto;
 }
@@ -259,17 +255,17 @@ section#precos input[type=button]:hover{
 }
 
 section#qualidades{
-    padding: 50px 15px;
-    column-gap: 15px;
-    row-gap: 10px;
+    padding: 50px 0;
+    column-gap: 10px;
 
     display: flex;
     flex-wrap: wrap;
 } 
 
 section#qualidades > div{
-    flex: 1 30px;
-    padding: 10px 0;
+    flex: 1 1 300px; 
+
+    padding: 0 5px;
 }
 
 section#qualidades > div h1{
@@ -293,8 +289,88 @@ section#qualidades > div h1{
 }
 
 section#qualidades > div p{
-    font-size: 1.3em;
+    font-size: 1.2em;
     color: #7C7C7C;
+}
+
+footer{
+    background-color: #F7F7F7;
+}
+
+footer > section#nl{
+    padding: 50px 15px;
+    max-width: 920px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+
+section#nl .nl{
+    padding-right: 20px;
+
+    flex: 1;
+}
+
+section#nl h1{
+    font-size: 3em;
+    color: #A4A4A4;
+    
+}
+
+section#nl p{
+    color: #7C7C7C;
+}
+
+.inemail{
+    background-color: #2C70FF;
+    padding: 5px;
+    margin-top: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+
+
+.inemail input{
+    flex: 1;
+}
+
+.inemail input[type=email]{
+    border: none;
+    font-size: 1.2em;
+    font-style: italic;
+    padding: 10px;
+}
+
+.inemail input[type=submit]{
+    background-color: #2C70FF;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    border: none;
+    flex-basis: 100px;
+    height: 70px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+div#copyr{
+    background-color: #2C70FF;
+    font-size: 2em;
+    color: #122AB2;
+    padding: 50px;
+}
+
+div#copyr section{
+    max-width: 920px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 @media (min-width: 740px){
@@ -315,6 +391,6 @@ section#qualidades > div p{
     }
 
     .cobre{
-        order: 3;
+        order: 2;
     }
 }
