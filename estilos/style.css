@@ -15,6 +15,10 @@
     font-family: 'Nunito';
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 header{
     color: white;
 }
