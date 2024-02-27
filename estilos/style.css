@@ -26,7 +26,7 @@ header #ho-tel-loc{
 }
 
 #ho-tel-loc > div{
-    max-width: 900px;
+    max-width: 950px;
 
     display: flex;
     flex-wrap: wrap;
@@ -47,7 +47,7 @@ div#logo-nav{
 
 div#logo-nav > div{
     padding: 15px 0px 15px 15px;
-    max-width: 900px;
+    max-width: 950px;
 
     display: flex;
     flex-wrap: wrap;
@@ -58,8 +58,7 @@ div#logo-nav > div{
 
 #logo-nav h1{
     font-size: 2.3em;
-    padding: 0px 20px 0px 0px;
-    margin: 0 0 0 0;
+    padding-right: 20px;
 }
 
 #logo-nav a{
@@ -101,7 +100,7 @@ main article p{
 }
 
 article#sobre{
-    margin: 50px 0 0 0;
+    margin-top: 50px;
     padding: 0 15px 50px  15px;
     border-bottom: 2px solid #2C70FF;
 
@@ -110,9 +109,9 @@ article#sobre{
 }
 
 #sobre .texto-sobre{
-    padding: 0 10px 0 0;
+    padding-right: 20px;
     margin: 0 0 0 -15px;
-    flex: 1 0 350px;
+    flex: 1 350px;
 }
 
 .texto-sobre p{
@@ -129,13 +128,12 @@ article#sobre > div.img1{
 }
 
 article#sobre > div.img1 > img{
-    
     width: 100%;
     height: 100%;
 }
 
 section#produtos{
-    padding: 0 0 50px 0;
+    padding-bottom: 50px;
 }
 
 section#produtos > h1{
@@ -144,8 +142,6 @@ section#produtos > h1{
 }
 
 section#pdt-flex{
-
-
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
@@ -299,7 +295,7 @@ footer{
 
 footer > section#nl{
     padding: 50px 15px;
-    max-width: 920px;
+    max-width: 950px;
     margin: 0 auto;
 
     display: flex;
@@ -335,8 +331,6 @@ section#nl p{
     flex: 1;
 }
 
-
-
 .inemail input{
     flex: 1;
 }
@@ -360,16 +354,14 @@ section#nl p{
     cursor: pointer;
 }
 
-div#copyr{
+section#copyr{
     background-color: #2C70FF;
     font-size: 2em;
     color: #122AB2;
     padding: 50px;
 }
 
-div#copyr section{
-    max-width: 920px;
-    margin: 0 auto;
+section#copyr{
     text-align: center;
 }
 
