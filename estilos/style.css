@@ -298,9 +298,8 @@ footer{
 }
 
 footer > section#nl{
-    padding: 50px 15px;
-    max-width: 950px;
-    margin: 0 auto;
+    padding: 50px calc((100% - 950px) / 2 );
+    margin: 0 30px 0 15px;
 
     display: flex;
     flex-wrap: wrap;
@@ -318,11 +317,13 @@ section#nl .nl{
 section#nl h1{
     font-size: 3em;
     color: #A4A4A4;
-    
 }
 
 section#nl p{
     color: #7C7C7C;
+    font-size: 1.25em;
+    font-style: italic;
+    max-width: 230px;
 }
 
 .inemail{
@@ -332,18 +333,17 @@ section#nl p{
 
     display: flex;
     flex-wrap: wrap;
-    flex: 1;
-}
-
-.inemail input{
-    flex: 1;
+    flex: 2 1;
 }
 
 .inemail input[type=email]{
     border: none;
+    border-radius: 0;
     font-size: 1.2em;
     font-style: italic;
     padding: 10px;
+    flex: 3 1;
+    background-color: #F7F7F7;
 }
 
 .inemail input[type=submit]{
@@ -352,7 +352,7 @@ section#nl p{
     font-size: 2em;
     font-weight: bold;
     border: none;
-    flex-basis: 100px;
+    flex: 1 1 160px;
     height: 70px;
     padding: 15px;
     cursor: pointer;
